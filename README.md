@@ -1,27 +1,4 @@
-# Intuition Report 2
-
-Learning rate - 0.03
-
-Activation - RelU
-
-Ratio of training to batch data - 80:20
-
-Features- x1, x2, task - classification
-
-Experiment: Test until validation loss stops dropping
-
-| Number of Hidden Layers | Neurons in hidden layer | Lowest Test loss | Number of epochs trained | Notes                                         |
-| ----------------------- | ----------------------- | ---------------- | ------------------------ | --------------------------------------------- |
-| 1                       | 1                       | 0.443            | 166                      | Pretty much a linear                          |
-| 1                       | 2                       | 0.270            | 49                       | Classification is a 2d space                  |
-| 1                       | 3                       | 0.01             | 340                      | Classification is now a polygon               |
-| 1                       | 4                       | 0.004            | 372                      | Also polygon                                  |
-| Using more complex data |                         |                  |                          |                                               |
-| 1                       | 4                       | 0.475            |                          |                                               |
-| 2                       | 4,2                     | 0.472            |                          | Not much better and quickly starts to overfit |
-| 2                       | 4,3                     | 0.475            |                          |                                               |
-| 3                       | 4,3,2                   | 0.478            |                          |                                               |
-| 5                       | 7,5,2                   | 0.200            |                          |                                               |
+# Tensorflow Playground Analysis
 
 I chose the tensorflow playground for this intuition report mainly cause how well it visualizes the inner neurons, right down to a visualization of the neuron's activation function. This quickly interested me because I could see in near real time how each neuron reacted to my experiments. The other motivation for picking this my knowledge on how the layers interact is fuzzy at best and I had hoped playing around with this would help.
 
